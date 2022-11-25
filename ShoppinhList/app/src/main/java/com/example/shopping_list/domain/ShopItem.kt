@@ -2,7 +2,7 @@ package com.example.shopping_list.domain
 
 data class ShopItem(
     val name: String,
-    val caount: Int,
+    val count: Int,
     val enable: Boolean,
     var id: Int= UNDEFINED_ID
 )
