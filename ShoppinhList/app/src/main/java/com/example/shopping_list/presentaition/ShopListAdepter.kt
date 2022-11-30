@@ -15,7 +15,7 @@ class ShopListAdepter : ListAdapter<ShopItem, ShopItemViewHolder>(ShopItemDiffCa
         val layout = when (viewType) {
             VIEW_TYPE_ENABLED -> R.layout.item_shop_enabled
             VIEW_TYPE_DISABLED -> R.layout.item_shop_disenabled
-            else -> throw RuntimeException("Unknown view Type: ${viewType}")
+            else -> throw RuntimeException("Unknown view Type: $viewType")
         }
         val view = LayoutInflater.from(parent.context).inflate(layout, parent, false)
 
@@ -49,6 +49,6 @@ class ShopListAdepter : ListAdapter<ShopItem, ShopItemViewHolder>(ShopItemDiffCa
     companion object {
         const val VIEW_TYPE_ENABLED = 100
         const val VIEW_TYPE_DISABLED = 101
-        const val MAX_POOL_SIZE = 15
+        const val MAX_POOL_SIZE = 30
     }
 }
