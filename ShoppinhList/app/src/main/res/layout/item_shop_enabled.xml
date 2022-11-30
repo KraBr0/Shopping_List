@@ -11,11 +11,12 @@
     app:cardCornerRadius="4dp"
     app:cardElevation="1dp"
     app:cardUseCompatPadding="true">
+    <!--        android:background="#338886FC"-->
 
     <LinearLayout
         android:layout_width="match_parent"
          android:layout_height="wrap_content"
-        android:background="#338886FC"
+        android:background="#555"
         android:orientation="horizontal"
         android:padding="16dp">
 
