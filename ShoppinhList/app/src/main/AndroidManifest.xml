@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Shopping_List"
         tools:targetApi="31">
+        <activity android:name=".presentaition.ShopItemActivity"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".presentaition.MainActivity"
             android:exported="true">
