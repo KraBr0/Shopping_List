@@ -12,12 +12,12 @@ object ShopListRepositoryImpl : ShopListRepository {
     private var autoIncrementId = 0
     private val shopListLD = MutableLiveData<List<ShopItem>>()
 
-//    init {
-//        for (i in 0 until 3) {
-//            val item = ShopItem("Name $i", i, true)
-//            addShopItem(item)
-//        }
-//    }
+    init {
+        for (i in 0 until 3) {
+            val item = ShopItem("Name $i", i, true)
+            addShopItem(item)
+        }
+    }
 
     override fun addShopItem(shopItem: ShopItem) {
         if (shopItem.id == ShopItem.UNDEFINED_ID) {
